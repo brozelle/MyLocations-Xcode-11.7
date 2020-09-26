@@ -59,13 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				5D474A55251F847E00B65A33 /* AppDelegate.swift */,
-				5D474A57251F847E00B65A33 /* SceneDelegate.swift */,
-				5D474A59251F847E00B65A33 /* CurrentLocationViewController.swift */,
-				5D474A5B251F847E00B65A33 /* SecondViewController.swift */,
-				5D474A5D251F847E00B65A33 /* Main.storyboard */,
 				5D474A60251F848300B65A33 /* Assets.xcassets */,
-				5D474A62251F848300B65A33 /* LaunchScreen.storyboard */,
+				5D474A59251F847E00B65A33 /* CurrentLocationViewController.swift */,
 				5D474A65251F848300B65A33 /* Info.plist */,
+				5D474A5D251F847E00B65A33 /* Main.storyboard */,
+				5D474A62251F848300B65A33 /* LaunchScreen.storyboard */,
+				5D474A57251F847E00B65A33 /* SceneDelegate.swift */,
+				5D474A5B251F847E00B65A33 /* SecondViewController.swift */,
 			);
 			path = MyLocations;
 			sourceTree = "<group>";

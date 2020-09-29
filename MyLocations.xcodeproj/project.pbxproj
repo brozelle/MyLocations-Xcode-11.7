@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D0053CE2521502700B93DD0 /* CategoryPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0053CD2521502700B93DD0 /* CategoryPickerViewController.swift */; };
 		5D474A56251F847E00B65A33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D474A55251F847E00B65A33 /* AppDelegate.swift */; };
 		5D474A58251F847E00B65A33 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D474A57251F847E00B65A33 /* SceneDelegate.swift */; };
 		5D474A5A251F847E00B65A33 /* CurrentLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D474A59251F847E00B65A33 /* CurrentLocationViewController.swift */; };
@@ -14,9 +15,11 @@
 		5D474A5F251F847E00B65A33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D474A5D251F847E00B65A33 /* Main.storyboard */; };
 		5D474A61251F848300B65A33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D474A60251F848300B65A33 /* Assets.xcassets */; };
 		5D474A64251F848300B65A33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D474A62251F848300B65A33 /* LaunchScreen.storyboard */; };
+		5D474A99251FF9B200B65A33 /* LocationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D474A98251FF9B200B65A33 /* LocationDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5D0053CD2521502700B93DD0 /* CategoryPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPickerViewController.swift; sourceTree = "<group>"; };
 		5D474A52251F847E00B65A33 /* MyLocations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyLocations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D474A55251F847E00B65A33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5D474A57251F847E00B65A33 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		5D474A60251F848300B65A33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D474A63251F848300B65A33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D474A65251F848300B65A33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D474A98251FF9B200B65A33 /* LocationDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,10 +66,12 @@
 				5D474A60251F848300B65A33 /* Assets.xcassets */,
 				5D474A59251F847E00B65A33 /* CurrentLocationViewController.swift */,
 				5D474A65251F848300B65A33 /* Info.plist */,
-				5D474A5D251F847E00B65A33 /* Main.storyboard */,
 				5D474A62251F848300B65A33 /* LaunchScreen.storyboard */,
+				5D474A98251FF9B200B65A33 /* LocationDetailsViewController.swift */,
+				5D474A5D251F847E00B65A33 /* Main.storyboard */,
 				5D474A57251F847E00B65A33 /* SceneDelegate.swift */,
 				5D474A5B251F847E00B65A33 /* SecondViewController.swift */,
+				5D0053CD2521502700B93DD0 /* CategoryPickerViewController.swift */,
 			);
 			path = MyLocations;
 			sourceTree = "<group>";
@@ -141,10 +147,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D0053CE2521502700B93DD0 /* CategoryPickerViewController.swift in Sources */,
 				5D474A5C251F847E00B65A33 /* SecondViewController.swift in Sources */,
 				5D474A5A251F847E00B65A33 /* CurrentLocationViewController.swift in Sources */,
 				5D474A56251F847E00B65A33 /* AppDelegate.swift in Sources */,
 				5D474A58251F847E00B65A33 /* SceneDelegate.swift in Sources */,
+				5D474A99251FF9B200B65A33 /* LocationDetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +299,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6SP468TM33;
 				INFOPLIST_FILE = MyLocations/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +318,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6SP468TM33;
 				INFOPLIST_FILE = MyLocations/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

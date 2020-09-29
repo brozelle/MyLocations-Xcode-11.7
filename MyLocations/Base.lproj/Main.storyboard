@@ -126,7 +126,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="88"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="(Description goes here.)" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Tc2-wg-o6S">
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="onDrag" text="(Description goes here.)" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Tc2-wg-o6S">
                                                     <rect key="frame" x="16" y="10" width="382" height="68"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                     <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>

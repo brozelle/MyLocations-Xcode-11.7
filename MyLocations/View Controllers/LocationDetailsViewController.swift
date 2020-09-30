@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreLocation
+import CoreData
 
 private let dateFormatter: DateFormatter = {
     let formatter = DateFormatter()
@@ -21,8 +22,9 @@ class LocationDetailsViewController: UITableViewController {
     var coordinate = CLLocationCoordinate2D(latitude: 0,
                                             longitude: 0)
     var placemark: CLPlacemark?
-    
     var categoryName = "No Category"
+    var managedObjectContext: NSManagedObjectContext!
+    var date = Date()
     
     @IBOutlet weak var descriptionTextView: UITextView!
     @IBOutlet weak var categoryLabel: UILabel!
@@ -49,7 +51,7 @@ class LocationDetailsViewController: UITableViewController {
             addressLabel.text = "No Address Found"
             
         }
-        dateLabel.text = format(date: Date())
+        dateLabel.text = format(date: date)
         
         // Hide Keyboard
         let gestureRecognizer = UITapGestureRecognizer(target: self,
@@ -65,12 +67,30 @@ class LocationDetailsViewController: UITableViewController {
         let hudView = HudView.hud(inView: navigationController!.view, animated: true)
         hudView.text = "Tagged"
         
-        afterDelay(0.6) {
+        //Create the location instance
+        let location = Location(context: managedObjectContext)
+        
+        //Set the properties
+        location.locationDescription = descriptionTextView.text
+        location.category = categoryName
+        location.latitude = coordinate.latitude
+        location.longitude = coordinate.longitude
+        location.date = date
+        location.placemark = placemark
+        
+        //objects are saved to the data store.
+        do {
+            try managedObjectContext.save()
+            afterDelay(0.6) {
             hudView.hide()
             self.navigationController?.popViewController(animated: true)
+            
+            }
+        //Output the error and terminate the application
+        } catch {
+            fatalCoreDataError(error)
         }
         
-        //navigationController?.popViewController(animated: true)
 }
 
     @IBAction func cancel() {

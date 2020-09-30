@@ -10,6 +10,9 @@
 		5D0053CE2521502700B93DD0 /* CategoryPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0053CD2521502700B93DD0 /* CategoryPickerViewController.swift */; };
 		5D2C1C172523BDEF0020D53D /* HudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2C1C162523BDEF0020D53D /* HudView.swift */; };
 		5D2C1C192523D8570020D53D /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2C1C182523D8560020D53D /* Functions.swift */; };
+		5D2C1C1C2523DB640020D53D /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5D2C1C1A2523DB640020D53D /* DataModel.xcdatamodeld */; };
+		5D2C1C1F2523DD6E0020D53D /* Location+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2C1C1D2523DD6E0020D53D /* Location+CoreDataClass.swift */; };
+		5D2C1C202523DD6E0020D53D /* Location+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2C1C1E2523DD6E0020D53D /* Location+CoreDataProperties.swift */; };
 		5D474A56251F847E00B65A33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D474A55251F847E00B65A33 /* AppDelegate.swift */; };
 		5D474A58251F847E00B65A33 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D474A57251F847E00B65A33 /* SceneDelegate.swift */; };
 		5D474A5A251F847E00B65A33 /* CurrentLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D474A59251F847E00B65A33 /* CurrentLocationViewController.swift */; };
@@ -24,6 +27,9 @@
 		5D0053CD2521502700B93DD0 /* CategoryPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPickerViewController.swift; sourceTree = "<group>"; };
 		5D2C1C162523BDEF0020D53D /* HudView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HudView.swift; sourceTree = "<group>"; };
 		5D2C1C182523D8560020D53D /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
+		5D2C1C1B2523DB640020D53D /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		5D2C1C1D2523DD6E0020D53D /* Location+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Location+CoreDataClass.swift"; path = "MyLocations/Location+CoreDataClass.swift"; sourceTree = "<group>"; };
+		5D2C1C1E2523DD6E0020D53D /* Location+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Location+CoreDataProperties.swift"; path = "MyLocations/Location+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		5D474A52251F847E00B65A33 /* MyLocations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyLocations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D474A55251F847E00B65A33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5D474A57251F847E00B65A33 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +56,8 @@
 		5D474A49251F847E00B65A33 = {
 			isa = PBXGroup;
 			children = (
+				5D2C1C1D2523DD6E0020D53D /* Location+CoreDataClass.swift */,
+				5D2C1C1E2523DD6E0020D53D /* Location+CoreDataProperties.swift */,
 				5D474A54251F847E00B65A33 /* MyLocations */,
 				5D474A53251F847E00B65A33 /* Products */,
 			);
@@ -75,6 +83,7 @@
 				5D474A57251F847E00B65A33 /* SceneDelegate.swift */,
 				5D2C1C162523BDEF0020D53D /* HudView.swift */,
 				5D2C1C182523D8560020D53D /* Functions.swift */,
+				5D2C1C1A2523DB640020D53D /* DataModel.xcdatamodeld */,
 			);
 			path = MyLocations;
 			sourceTree = "<group>";
@@ -163,11 +172,14 @@
 			files = (
 				5D0053CE2521502700B93DD0 /* CategoryPickerViewController.swift in Sources */,
 				5D474A5C251F847E00B65A33 /* SecondViewController.swift in Sources */,
+				5D2C1C202523DD6E0020D53D /* Location+CoreDataProperties.swift in Sources */,
 				5D474A5A251F847E00B65A33 /* CurrentLocationViewController.swift in Sources */,
 				5D2C1C192523D8570020D53D /* Functions.swift in Sources */,
 				5D474A56251F847E00B65A33 /* AppDelegate.swift in Sources */,
 				5D474A58251F847E00B65A33 /* SceneDelegate.swift in Sources */,
+				5D2C1C1C2523DB640020D53D /* DataModel.xcdatamodeld in Sources */,
 				5D2C1C172523BDEF0020D53D /* HudView.swift in Sources */,
+				5D2C1C1F2523DD6E0020D53D /* Location+CoreDataClass.swift in Sources */,
 				5D474A99251FF9B200B65A33 /* LocationDetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -368,6 +380,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5D2C1C1A2523DB640020D53D /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5D2C1C1B2523DB640020D53D /* DataModel.xcdatamodel */,
+			);
+			currentVersion = 5D2C1C1B2523DB640020D53D /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 5D474A4A251F847E00B65A33 /* Project object */;
 }
